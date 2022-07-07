@@ -1,0 +1,79 @@
+$primary-font: 'Nunito';
+.nation-list{
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    margin: 0 5%;
+    background-color: rgba(0,0,0,0.5);
+    .nation{
+        display: grid;
+        grid-template-columns: 2fr 2fr repeat(3,3fr);
+        border-top: 1px solid;
+        & > *{
+            border-right: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+        }
+        .element,
+        .emblem{
+            flex-direction: column;
+            img{width: 80%;}
+        }
+        img,h1{margin:0;}
+    }      
+    .nation-header{
+        background-color: white;
+        color: black;
+        font-weight: bold;    
+        div:nth-child(5){
+            border-right: 0;
+        }        
+    }        
+}
+
+.commentSection{
+    font-family: $primary-font;
+    button{
+        width: 100%;
+        padding: 5px;
+        font-family: $primary-font;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:hover{
+            color: whitesmoke;
+            background-color: black;
+            box-shadow: 0 0 0 2px whitesmoke;
+        }
+    }
+}
+@media screen and (max-width: 1080px) {
+    .contentText {
+        font-size: 12px;
+        margin: 0 5%;
+        flex: 1;
+        .nation-list{margin:0}    
+    }
+}
+@media screen and (max-width: 750px){
+    .close{
+        width: 0%;
+        padding: 5% 0;
+    }
+    .contentText {
+        font-size: 8px;        
+    }
+    .open{
+        width: 50%;
+        padding: 5%;
+    }
+}
+@media screen and (max-width: 320px){
+    .contentText {   
+        font-size: 6px;      
+    }
+    .open{
+        width: 80%;
+        padding: 5%;
+    }
+}

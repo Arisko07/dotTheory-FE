@@ -1,0 +1,112 @@
+.nation-list {
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  margin: 0 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nation-list .nation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr (3fr)[3];
+      grid-template-columns: 2fr 2fr repeat(3, 3fr);
+  border-top: 1px solid;
+}
+
+.nation-list .nation > * {
+  border-right: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+.nation-list .nation .element,
+.nation-list .nation .emblem {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nation-list .nation .element img,
+.nation-list .nation .emblem img {
+  width: 80%;
+}
+
+.nation-list .nation img, .nation-list .nation h1 {
+  margin: 0;
+}
+
+.nation-list .nation-header {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.nation-list .nation-header div:nth-child(5) {
+  border-right: 0;
+}
+
+.commentSection {
+  font-family: "Nunito";
+}
+
+.commentSection button {
+  width: 100%;
+  padding: 5px;
+  font-family: "Nunito";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.commentSection button:hover {
+  color: whitesmoke;
+  background-color: black;
+  -webkit-box-shadow: 0 0 0 2px whitesmoke;
+          box-shadow: 0 0 0 2px whitesmoke;
+}
+
+@media screen and (max-width: 1080px) {
+  .contentText {
+    font-size: 12px;
+    margin: 0 5%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .contentText .nation-list {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .close {
+    width: 0%;
+    padding: 5% 0;
+  }
+  .contentText {
+    font-size: 8px;
+  }
+  .open {
+    width: 50%;
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contentText {
+    font-size: 6px;
+  }
+  .open {
+    width: 80%;
+    padding: 5%;
+  }
+}
+/*# sourceMappingURL=teyvat.css.map */

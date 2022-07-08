@@ -10,7 +10,8 @@ function createArticles(articles){
     let articleContainer = document.querySelector(".article-list");    
     articles.articles.forEach( article => {
         articleContainer.innerHTML+=`
-        <section class="section-item ${article.type}">
+        <a class="${article.type}" href="${article.source}">
+        <section class="section-item">
             <img src="../../img/${article.img}">
             <div>
                 <h1>${article.header}</h1>
@@ -18,6 +19,7 @@ function createArticles(articles){
             </div>
             <p class="date-item">${article.date}</p>
         </section>
+        </a>
         `
     });
 }

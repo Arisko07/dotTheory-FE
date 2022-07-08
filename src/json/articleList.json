@@ -4,6 +4,7 @@
         "date":"March 22, 2022",
         "img":"drink.jpg",
         "header":"Of Drink A-Dreaming Gameplay Details",
+        "source":"#",
         "content":"The new event Of Drink A-Dreaming is about to begin! Luka from Mondstadt is inviting people to take part in Bartender Academy Week. He says that those whose customers walk away satisfied will receive impressive rewards..."
     },
     {
@@ -11,6 +12,7 @@
         "date":"March 27, 2022",
         "img":"pai.jpg",
         "header":"Genshin Impact EP - A Scenery of Skylight and Serenity",
+        "source":"#",
         "content":"The sakura petals scatter as they caress the earth, and dreams are renewed by transcending eternity. When the Narukami's musings finally bear fruit, the storm will give way to a serene skylight."
     },
     {
@@ -18,6 +20,7 @@
         "date":"March 30, 2022",
         "img":"art1.jpg",
         "header":"Genshin Impact EP - The Iridescent Waves",
+        "source":"#",
         "content":"Clouds move across the sea, riding the wind of distant mountains, reflected in a mirror of water. Waves in the heart, floating in the iridescent sky, silent as the moon of the quiet night."
     },
     {
@@ -25,6 +28,7 @@
         "date":"April 10, 2022",
         "img":"art2.jpg",
         "header":"Paimon's Sneak Peek at Version 2.5 New Events - Phase II",
+        "source":"#",
         "content":"In Version 2.5, there will be many new events available, let's take a look~"
     },
     {
@@ -32,6 +36,7 @@
         "date":"April 12, 2022",
         "img":"weapon.jpg",
         "header":"Event Wish Epitome Invocation - Boosted Drop Rate for Engulfing Lightning (Polearm) and Everlasting Moonglow (Catalyst)!",
+        "source":"#",
         "content":"Travelers, stock up on weapons and characters in Epitome Invocation to make your party stronger in combat!"
     },
     {
@@ -39,6 +44,7 @@
         "date":"April 12, 2022",
         "img":"Klee_Thumb.png",
         "header":"Klee - Da-Da Da!",
+        "source":"../view/KleePage.html",
         "content":"The daughter of the intrepid and often quite destructive adventurer Alice, Klee takes after her mother in many ways, much to the dismay of the Knights of Favonius whom she has been entrusted to."
     },
     {
@@ -46,6 +52,7 @@
         "date":"April 12, 2022",
         "img":"Ayaka_Thumb.png",
         "header":"Kamisato Ayaka - The Homeward Heron",
+        "source":"../view/AyakaPage.html",
         "content":"She is the oldest daughter of the Kamisato Clan and younger sister of Kamisato Ayato. Being beautiful, elegant, and graceful, the common folk have nothing to bad-mouth Ayaka about. <br> Because of her social status as the eldest daughter of the Kamisato Clan of the Yashiro Commission and as the Shirasagi Himegimi, Ayaka is seen as a model of perfection."
     },
     {
@@ -53,6 +60,7 @@
         "date":"April 12, 2022",
         "img":"Kazuha_Thumb.png",
         "header":"Kaedehara Kazuha: Moonlit Breeze",
+        "source":"../view/KazuhaPage.html",
         "content":"A wandering samurai of the once-famed Kaedehara Clan, Kazuha is a temporary crewmember of The Crux."
     },
     {
@@ -60,6 +68,7 @@
         "date":"April 12, 2022",
         "img":"Albedo_Thumb.png",
         "header":"Albedo - Still Life and Creation",
+        "source":"../view/AlbedoPage.html",
         "content":"A synthetic human made by the alchemist Rhinedottir, the mysterious Albedo is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.<br>Through a recommendation from the adventurer Alice, with Sucrose as his assistant, he holds an infinite desire to learn about the world of Teyvat, carefully studying every object around him."
     },
     {
@@ -67,6 +76,7 @@
         "date":"April 12, 2022",
         "img":"Teyvat_Thumb.webp",
         "header":"Adventures in Teyvat",
+        "source":"../view/TeyvatPage.html",
         "content":"Teyvat is the continent that serves as the primary region of Genshin Impact. <br>You have arrived in Teyvat — a fantasy world where the seven elements flow and converge."
     }
 ]

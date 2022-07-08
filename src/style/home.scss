@@ -19,9 +19,10 @@
             box-shadow: 0 0 0 2px whitesmoke;
         }
     }
+    a{display: none;}
     .section-item{
         position: relative;
-        display: none;
+        display: grid;
         background-color: whitesmoke;
         grid-template-columns: 2fr 6fr;
         border-radius: 5px;
@@ -51,10 +52,10 @@
             }
         }      
     }
-    &[data-category="info"] .section-item.info,
-    &[data-category="character"] .section-item.character,
-    &[data-category="events"] .section-item.events{
-        display: grid !important;
+    &[data-category="info"] a.info,
+    &[data-category="character"] a.character,
+    &[data-category="events"] a.events{
+        display: block;
     }
 }
 @media screen and (max-width: 750px) {

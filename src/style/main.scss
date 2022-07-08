@@ -60,11 +60,11 @@ a{
     background-color: $secondary-color;
 }
 .content{
-    padding-top: 0;
+    padding-top: 0;    
     font-family: $primary-font;
     color: $primary-color;     
     width: 70%;
-    margin: 2% auto 0;
+    margin: 2% auto 40px;
     min-height: 65vh;    
     display: flex;
     
@@ -108,7 +108,7 @@ a{
 .contentArticle{display: flex;}
 .contentImage{width: 40%;}
 .contentImage img{width: 100%;}
-.charactersTeyvat{
+.detailVideo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +130,7 @@ a{
     img{height: 25px;}
     a{margin: 0 5px;}   
 }
-.teyvat-page .charactersTeyvat .frameWrapper{
+.teyvat-page .detailVideo .frameWrapper{
     width: 44.5%;
     padding-bottom: 25%;
     position: relative;
@@ -377,7 +377,7 @@ a{
         &.open .sections{display: block;}
     }
     
-    .teyvat-page .charactersTeyvat .frameWrapper{
+    .teyvat-page .detailVideo .frameWrapper{
         width: 90%;
         padding-bottom: 50.5%;
     }

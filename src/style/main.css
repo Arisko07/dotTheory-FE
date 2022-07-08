@@ -85,7 +85,7 @@ a {
   font-family: "Nunito";
   color: white;
   width: 70%;
-  margin: 2% auto 0;
+  margin: 2% auto 40px;
   min-height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,7 +176,7 @@ a {
   width: 100%;
 }
 
-.charactersTeyvat {
+.detailVideo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +218,7 @@ a {
   margin: 0 5px;
 }
 
-.teyvat-page .charactersTeyvat .frameWrapper {
+.teyvat-page .detailVideo .frameWrapper {
   width: 44.5%;
   padding-bottom: 25%;
   position: relative;
@@ -570,7 +570,7 @@ a {
   .sideContent.open .sections {
     display: block;
   }
-  .teyvat-page .charactersTeyvat .frameWrapper {
+  .teyvat-page .detailVideo .frameWrapper {
     width: 90%;
     padding-bottom: 50.5%;
   }

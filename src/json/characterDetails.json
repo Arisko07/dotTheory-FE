@@ -1,0 +1,82 @@
+{
+    "ayaka":[
+        {
+            "icon":"Sword_Cryo.webp",
+            "name": "Kamisato Art: Kabuki",
+            "type": "Normal Attack",
+            "description":"<p><strong>Normal Attack</strong><br>Perform up to 5 rapid strikes</p><p><strong>Charged Attack</strong><br> Consumes a certain amount of Stamina to unleash a flurry of sword ki</p><p><strong>Plunging Attack</strong><br>Plunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.</p>"
+        },
+        {
+            "icon":"Talent_Kamisato_Art_Hyouka.webp",
+            "name": "Kamisato Art: Hyouka",
+            "type": "Elemental Skill",
+            "description":"<p>Summons blooming ice to launch nearby opponents, dealing AoE Cryo DMG.</p><p>Clouds shroud the moonlit night. Longing descends like a fog, filling the one detained with wanderlust.</p>"
+        },
+        {
+            "icon":"Talent_Kamisato_Art_Soumetsu.webp",
+            "name": "Kamisato Art: Soumetsu",
+            "type": "Elemental Burst",
+            "description":"<p>Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously.</p>"
+        }
+    ],
+    "kazuha":[
+        {
+            "icon":"Sword_Anemo.webp",
+            "name": "Garyuu Bladework",
+            "type": "Normal Attack",
+            "description":"<p><strong>Normal Attack</strong><br>Perform up to 5 rapid strikes</p><p><strong>Charged Attack</strong><br>Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.</p><p><strong>Plunging Attack</strong><br>Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact. If this Plunging Attack is triggered by Chihayaburu, it will be converted to Plunging Attack: Midare Ranzan.</p><p><strong>Plunging Attack: Midare Ranzan</strong><br>When a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu, Plunging Attack DMG is converted to Anemo DMG and will create a small wind tunnel via a secret blade technique that pulls in nearby objects and opponents.</p>"
+        },
+        {
+            "icon":"Talent_Chihayaburu.webp",
+            "name": "Chihayaburu",
+            "type": "Elemental Skill",
+            "description":"<p>Unleashes a secret technique as fierce as the rushing wind that pulls objects and opponents towards Kazuha's current position before launching opponents within the AoE, dealing Anemo DMG and lifting Kazuha into the air on a rushing gust of wind.<br>Within 10s of remaining airborne after casting Chihayaburu, Kazuha can unleash a powerful Plunging Attack known as Midare Ranzan.</p>"
+        },
+        {
+            "icon":"Talent_Kazuha_Slash.webp",
+            "name": "Kazuha Slash",
+            "type": "Elemental Burst",
+            "description":"<p>The signature technique of Kazuha's self-styled bladework — a single slash that strikes with the force of the first winds of autumn, dealing AoE Anemo DMG.<br>The blade's passage will leave behind a field named Autumn Whirlwind that periodically deals AoE Anemo DMG to opponents within its range.</p>"
+        }
+    ],
+    "albedo":[
+        {
+            "icon":"Sword_Geo.webp",
+            "name": "Favonius Bladework - Weiss",
+            "type": "Normal Attack",
+            "description":"<p><strong>Normal Attack</strong><br>Perform up to 5 rapid strikes</p><p><strong>Charged Attack</strong><br>Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.</p><p><strong>Plunging Attack</strong><br>Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>"
+        },
+        {
+            "icon":"Talent_Abiogenesis_Solar_Isotoma.webp",
+            "name": "Abiogenesis: Solar Isotoma",
+            "type": "Elemental Skill",
+            "description":"<p>Albedo creates a Solar Isotoma using alchemy, which deals AoE Geo DMG on appearance.</p><p><strong>Solar Isotoma</strong><br>has the following properties:</p><ul><li>When opponents within the Solar Isotoma field take DMG, the Solar Isotoma will generate Transient Blossoms which deal AoE Geo DMG. DMG dealt scales off Albedo's DEF.</li><li>Transient Blossoms can only be generated once every 2s.</li><li>When a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time.</li><li>Solar Isotoma is considered a Geo construct. Only one Solar Isotoma created by Albedo himself can exist at a time.</li></ul>"
+        },
+        {
+            "icon":"Talent_Rite_of_Progeniture_Tectonic_Tide.webp",
+            "name": "Rite of Progeniture: Tectonic Tide",
+            "type": "Elemental Burst",
+            "description":"<p>Under Albedo's command, Geo crystals surge and burst forth, dealing AoE Geo DMG in front of him.<br>If a Solar Isotoma created by Albedo himself is on the field, 7 Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing AoE Geo DMG.</p>"
+        }
+    ],
+    "klee":[
+        {
+            "icon":"Catalyst_Pyro.webp",
+            "name": "Kaboom!",
+            "type": "Normal Attack",
+            "description":"<p><strong>Normal Attack</strong><br>Throws things that go boom when they hit things! Perform up to 3 explosive attacks, dealing AoE Pyro DMG.</p><p><strong>Charged Attack</strong><br> Consumes a certain amount of Stamina and deals AoE Pyro DMG to opponents after a short casting time.</p><p><strong>Plunging Attack</strong><br>Gathering the power of Pyro, Klee plunges towards the ground from mid-air, damaging all opponents in her path. Deals AoE Pyro DMG upon impact with the ground.</p>"
+        },
+        {
+            "icon":"Talent_Jumpy_Dumpty.webp",
+            "name": "Jumpy Dumpty",
+            "type": "Elemental Skill",
+            "description":"<p>Jumpy Dumpty is tons of boom-bang-fun!<br>When thrown, Jumpy Dumpty bounces thrice, igniting and dealing AoE Pyro DMG with every bounce.</p><p>On the third bounce, the bomb splits into many mines.<br>The mines will explode upon contact with opponents, or after a short period of time, dealing AoE Pyro DMG.</p>"
+        },
+        {
+            "icon":"Talent_Sparks_N_Splash.webp",
+            "name": "Sparks n Splash",
+            "type": "Elemental Burst",
+            "description":"<p>Klee's Blazing Delight! For the duration of this ability, continuously summons Sparks 'n' Splash to attack nearby opponents, dealing AoE Pyro DMG.</p>"
+        }
+    ]
+}

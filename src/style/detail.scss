@@ -47,11 +47,40 @@ $primary-font: 'Nunito';
         }
     }
 }
+.character-table{
+    border: 1px solid;
+    margin: 0 5%;
+    background-color: rgba(0,0,0,0.5);
+    &_header{
+        display: grid;        
+        grid-template-columns: 1fr 3fr 3fr;
+        border-bottom: 1px solid;        
+        &:not(:first-child){
+            border-top: 1px solid;
+        }
+    }
+    &_detail{
+        display: flex;
+        height: 100%;
+        border-left: 1px solid;
+        justify-content: center;
+        align-items: center;
+    }
+    &_description{
+        padding: 0 20px;
+    }
+    img{
+        padding: 10px 0;
+        margin: auto;
+    }
+    ul li{display: list-item;}
+}
 @media screen and (max-width: 1080px) {
     .contentText {
         font-size: 12px;
         margin: 0 5%;
         flex: 1;
+        .character-table,
         .nation-list{margin:0}    
     }
 }

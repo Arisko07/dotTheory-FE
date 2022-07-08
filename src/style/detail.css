@@ -73,6 +73,51 @@
           box-shadow: 0 0 0 2px whitesmoke;
 }
 
+.character-table {
+  border: 1px solid;
+  margin: 0 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.character-table_header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 3fr;
+      grid-template-columns: 1fr 3fr 3fr;
+  border-bottom: 1px solid;
+}
+
+.character-table_header:not(:first-child) {
+  border-top: 1px solid;
+}
+
+.character-table_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  border-left: 1px solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.character-table_description {
+  padding: 0 20px;
+}
+
+.character-table img {
+  padding: 10px 0;
+  margin: auto;
+}
+
+.character-table ul li {
+  display: list-item;
+}
+
 @media screen and (max-width: 1080px) {
   .contentText {
     font-size: 12px;
@@ -81,6 +126,7 @@
         -ms-flex: 1;
             flex: 1;
   }
+  .contentText .character-table,
   .contentText .nation-list {
     margin: 0;
   }
@@ -109,4 +155,4 @@
     padding: 5%;
   }
 }
-/*# sourceMappingURL=teyvat.css.map */
+/*# sourceMappingURL=detail.css.map */

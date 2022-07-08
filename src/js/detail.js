@@ -8,6 +8,7 @@ async function fetchNations(){
 }
 function createNation(nations){
     let nationContainer = document.querySelector(".nation-list");
+    if(!nationContainer)return;
     console.log(nations);
     nations.majorNation.forEach( nation => {
         nationContainer.innerHTML +=`

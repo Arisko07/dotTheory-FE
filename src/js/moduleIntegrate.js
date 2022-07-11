@@ -1,10 +1,20 @@
 function readHTML(){
     const moduleContainer = document.querySelectorAll('[data-module]');
     moduleContainer.forEach(modules => {
-        const refHTML = modules.dataset.module;
-        fetch(`${refHTML}`).then(response => response.text()).then(text => modules.innerHTML = text);        
-    });
-    console.log("aa")
+        const refHTML = modules.dataset.module;        
+        fetch(`${refHTML}`).then(response => response.text()).then(text => {
+            const settings = modules.dataset.settings && JSON.parse(modules.dataset.settings);
+            let moduleText = text;
+            if(settings){
+                Object.entries(settings).map(item => {
+                    console.log(`data-${item[0]}`)
+                    console.log(moduleText)
+                    moduleText = moduleText.replace(`data-${item[0]}`,`${item[1]}`)
+                })
+            }
+            modules.innerHTML = moduleText;
+        });        
+    });    
 }
 function readCharacterDetails(){
     const character = document.querySelectorAll('[data-table]');    
@@ -27,6 +37,6 @@ function createTable(text,character){
     });
     character.innerHTML = detailHTML;
 }
-readCharacterDetails();
 readHTML();
+readCharacterDetails();
 /*rebranching fe101*/

@@ -103,6 +103,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .character-table_description {
@@ -110,7 +111,7 @@
 }
 
 .character-table img {
-  padding: 10px 0;
+  padding: 10px 5px;
   margin: auto;
 }
 
@@ -138,7 +139,7 @@
     padding: 5% 0;
   }
   .contentText {
-    font-size: 8px;
+    font-size: 12px;
   }
   .open {
     width: 50%;
@@ -148,7 +149,7 @@
 
 @media screen and (max-width: 320px) {
   .contentText {
-    font-size: 6px;
+    font-size: 10px;
   }
   .open {
     width: 80%;

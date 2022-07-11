@@ -116,7 +116,8 @@ a{
     color: $primary-color;
     padding-bottom: 5%;
 }
-.footer{    
+.footer{   
+    box-sizing: border-box; 
     width: 100%;    
     background-color: $secondary-color;
     color:$primary-color;

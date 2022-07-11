@@ -65,12 +65,13 @@ $primary-font: 'Nunito';
         border-left: 1px solid;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     &_description{
         padding: 0 20px;
     }
     img{
-        padding: 10px 0;
+        padding: 10px 5px;
         margin: auto;
     }
     ul li{display: list-item;}
@@ -90,7 +91,7 @@ $primary-font: 'Nunito';
         padding: 5% 0;
     }
     .contentText {
-        font-size: 8px;        
+        font-size: 12px;        
     }
     .open{
         width: 50%;
@@ -99,7 +100,7 @@ $primary-font: 'Nunito';
 }
 @media screen and (max-width: 320px){
     .contentText {   
-        font-size: 6px;      
+        font-size: 10px;      
     }
     .open{
         width: 80%;

@@ -135,10 +135,11 @@ a{
     text-align: center;
 }
 .socials{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,2.5rem);
     justify-content: center; 
     img{height: 25px;}
-    a{margin: 0 5px;}   
+    a{margin: 0 5px;}       
 }
 .teyvat-page .detailVideo .frameWrapper{
     width: 44.5%;

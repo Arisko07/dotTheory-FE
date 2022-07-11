@@ -43,8 +43,8 @@ a {
     */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 180px;
-      grid-template-columns: auto 180px;
+  -ms-grid-columns: auto 20vw;
+      grid-template-columns: auto 20vw;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   -webkit-box-align: center;
@@ -77,11 +77,19 @@ a {
 
 .codeLogo {
   font-size: 1.2vw;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 5%;
-  padding: 5%;
   text-transform: uppercase;
   font-weight: bold;
-  text-align: center;
   background-color: black;
 }
 
@@ -168,13 +176,14 @@ a {
 }
 
 .contentArticle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .contentImage {
-  width: 40%;
+  max-width: 100%;
 }
 
 .contentImage img {
@@ -535,8 +544,7 @@ a {
   }
   .headerContent .codeLogo {
     font-size: 1.5vw;
-    margin-right: 5%;
-    padding: 2%;
+    max-height: 30px;
   }
   .drag-article {
     display: block;
@@ -547,13 +555,7 @@ a {
   }
   .contentImage {
     width: 90%;
-    margin: 0 5%;
-  }
-  .contentArticle {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: 5%;
   }
   .mainContent {
     margin: 1% 5%;
@@ -585,6 +587,13 @@ a {
   .footer {
     font-size: 12px;
     padding: 5% 2%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contentArticle {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 

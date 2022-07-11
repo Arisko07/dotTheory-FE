@@ -35,7 +35,7 @@ a{
 
     //Grid Style
     display: grid;
-    grid-template-columns: auto 180px;
+    grid-template-columns: auto 20vw;
     grid-template-rows: 100%;
     align-items: center;    
 }
@@ -61,11 +61,13 @@ a{
 }
 .codeLogo{
     font-size: 1.2vw;
+    height: 80%;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 5%;
-    padding: 5%;
     text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
+    font-weight: bold;    
     background-color: $secondary-color;
 }
 .content{
@@ -114,8 +116,11 @@ a{
 .contentText{margin-right: 5%;flex:1;}
 .contentText li{display: flex;}
 .contentText img{margin-right: 5%;}
-.contentArticle{display: flex;}
-.contentImage{width: 40%;}
+.contentArticle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contentImage{max-width: 100%;}
 .contentImage img{width: 100%;}
 .detailVideo{
     display: flex;
@@ -176,6 +181,7 @@ a{
     background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(102,178,255,0.5));
 }
 .comment-article{
+    //Flex-style
     display: flex;
     flex-wrap: wrap;
 }
@@ -360,8 +366,7 @@ a{
         }
         .codeLogo {
             font-size: 1.5vw;
-            margin-right: 5%;
-            padding: 2%;
+            max-height: 30px;
         }
     }   
     .drag-article{
@@ -371,8 +376,7 @@ a{
         width: 100%;
         margin:1% 0;
     }       
-    .contentImage{width: 90%;margin: 0 5%;}
-    .contentArticle{flex-direction: column;}
+    .contentImage{width: 90%;margin: 5%;}    
     .mainContent {margin: 1% 5%;}
     .sidebar{display: none;}
     .sideContent {
@@ -396,5 +400,8 @@ a{
         font-size: 12px;
         padding: 5% 2%;
     }
+}
+@media screen and (max-width: 320px) {
+    .contentArticle{grid-template-columns: 1fr;}
 }
 /*Media Queries*/

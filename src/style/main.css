@@ -93,6 +93,11 @@ a {
   background-color: black;
 }
 
+.codeLogo:hover {
+  background-color: white;
+  color: black;
+}
+
 .content {
   padding-top: 0;
   font-family: "Nunito";
@@ -228,7 +233,19 @@ a {
 }
 
 .socials img {
+  border: 1px solid black;
+  border-radius: 99px;
   height: 25px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.socials img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border: 1px solid white;
 }
 
 .socials a {
@@ -320,6 +337,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 1000px;
+}
+
+.home-page-button div:hover {
+  background-color: yellow;
 }
 
 .home-page-button img {

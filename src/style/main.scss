@@ -69,6 +69,10 @@ a{
     text-transform: uppercase;
     font-weight: bold;    
     background-color: $secondary-color;
+    &:hover{
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
 }
 .content{
     padding-top: 0;    
@@ -143,7 +147,16 @@ a{
     display: grid;
     grid-template-columns: repeat(4,2.5rem);
     justify-content: center; 
-    img{height: 25px;}
+    img{
+        border: 1px solid black;
+        border-radius: 99px;
+        height: 25px;
+        transition: transform 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.5);
+            border: 1px solid white;
+        }
+    }
     a{margin: 0 5px;}       
 }
 .teyvat-page .detailVideo .frameWrapper{
@@ -202,8 +215,11 @@ a{
         justify-content: center;
         align-items: center;
         border-radius: 1000px;
+        &:hover{
+            background-color: yellow;
+        } 
     }
-    img{width: 60%;}    
+    img{width: 60%;}   
 }
 
 .arrow {

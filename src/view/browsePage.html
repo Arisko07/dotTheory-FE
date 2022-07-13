@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html class="browse-page">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style/browse.css">
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nunito">
@@ -25,10 +26,16 @@
                         <button type="submit" onclick="fetchPage()">Browse</button>
                     </div>
                 </div>
+                <section class="browse-list">
+                    <div class="view-button">
+                        <button class="grid-button browse-button" onclick="changeView(this)"><img src="../../img/border-none-solid.svg"></button>
+                        <button class="list-button browse-button" onclick="changeView(this)"><img src="../../img/bars-solid.svg"></button>
+                    </div>                    
+                </section>
             </div>
             <div data-module="../modules/footer.html"></div>
         </section>
-    </body>
-    <script src="../js/moduleIntegrate.js"></script>
-    <script src="../js/browse.js"></script>
+        <script type="text/javascript" src="../js/browse.js"></script>
+        <script src="../js/moduleIntegrate.js"></script>        
+    </body>    
 </html>

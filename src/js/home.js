@@ -11,7 +11,7 @@ function createArticles(articles){
     articles.articles.forEach( article => {
         articleContainer.innerHTML+=`
         <a class="${article.type}" href="${article.source}">
-        <section class="section-item">
+        <section class="section-item ${article.type}">
             <img src="../../img/${article.img}">
             <div>
                 <h1>${article.header}</h1>

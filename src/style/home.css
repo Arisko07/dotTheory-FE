@@ -1,31 +1,4 @@
 /*home page style*/
-.home-page-button {
-  position: absolute;
-  z-index: 99;
-}
-
-.home-page-button div {
-  position: relative;
-  background-color: white;
-  width: 3vw;
-  height: 3vw;
-  left: 1vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 1000px;
-}
-
-.home-page-button img {
-  width: 60%;
-}
-
 .home-page .content {
   display: -webkit-box;
   display: -ms-flexbox;

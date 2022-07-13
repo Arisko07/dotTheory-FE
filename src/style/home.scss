@@ -5,22 +5,7 @@ $background-image: url(../../img/shooting.jpg);
 $header-image: url(../../img/yellowBanner.jpg);
 
 /*home page style*/
-.home-page-button{
-    position: absolute;
-    z-index: 99;
-    div{
-        position: relative;
-        background-color: $primary-color;
-        width: 3vw;
-        height: 3vw;   
-        left: 1vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1000px;
-    }
-    img{width: 60%;}    
-}
+
 .home-page .content{
     display: flex;
     flex-direction: column;

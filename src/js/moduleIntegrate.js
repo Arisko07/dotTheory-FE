@@ -7,8 +7,6 @@ function readHTML(){
             let moduleText = text;
             if(settings){
                 Object.entries(settings).map(item => {
-                    console.log(`data-${item[0]}`)
-                    console.log(moduleText)
                     moduleText = moduleText.replace(`data-${item[0]}`,`${item[1]}`)
                 })
             }

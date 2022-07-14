@@ -1,0 +1,88 @@
+.about{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2%;
+    width: 80%;
+    margin: 10% auto;
+    &-article{
+        opacity: 0;
+        transition: 0.5s ease-out;
+        transform: translateX(-100%);
+        background-color: black;
+        color: black;
+        padding: 5%;
+        img{
+            opacity: 1;  
+            transition: transform 0.8s, opacity 0.3s 0.3s,top 0.3s 0.3s;                         
+        }
+        p{            
+            opacity: 0;                   
+        }
+        &.active{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        &:hover{
+            transform: scale(1.2);            
+            background-color: whitesmoke;
+            z-index: 99;
+            p{
+                transition: 0.3s 0.5s;
+                opacity: 1;
+            }
+            img{                
+                transform: scale(1.5);
+                opacity: 0;                
+            }
+        }
+    }
+    &-front{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    &-header{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: -80px;
+        width: 100%;                
+        h1{
+            width: fit-content;
+            transition: 0.5s ease-in;
+            margin: 0 10px;
+            &.active{
+                transform: scale(2);
+                color: red;
+            }                
+        }
+        &:hover{                
+            /*
+            h1 {
+                animation: color-change 10s infinite;
+              }
+              
+            @keyframes color-change {
+                0% { color: red; }
+                10% { color: blue; }
+                20% { color: green; }
+                30% { color: yellow; }
+                40% { color: black; }
+                50% { color: white; }
+                60% { color: violet; }
+                70% { color: pink; }
+                80% { color: navy; }
+                90% { color: skyblue;}
+                100% { color: red; }
+            }
+            */
+        }
+    }
+}

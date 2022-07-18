@@ -23,10 +23,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   min-height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   background-color: aliceblue;
 }
 
@@ -93,16 +93,23 @@ a {
   background-color: black;
 }
 
+.codeLogo:hover {
+  background-color: white;
+  color: black;
+}
+
 .content {
   padding-top: 0;
   font-family: "Nunito";
   color: white;
   width: 70%;
   margin: 2% auto 40px;
-  min-height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border-radius: 5px;
 }
 
@@ -121,7 +128,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 1% 0;
+  margin: 1% 0 0;
   border: 2px solid;
   padding: 1%;
 }
@@ -228,7 +235,19 @@ a {
 }
 
 .socials img {
+  border: 1px solid black;
+  border-radius: 99px;
   height: 25px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.socials img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border: 1px solid white;
 }
 
 .socials a {
@@ -320,6 +339,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 1000px;
+}
+
+.home-page-button div:hover {
+  background-color: yellow;
 }
 
 .home-page-button img {

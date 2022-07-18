@@ -15,9 +15,9 @@ a{
     background-repeat: no-repeat;
     background-size: cover;    
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
+    flex-direction: column;      
     min-height: 100vh; 
+    flex-grow:1;
     background-color: aliceblue;
 }
 .headerContent{
@@ -69,16 +69,19 @@ a{
     text-transform: uppercase;
     font-weight: bold;    
     background-color: $secondary-color;
+    &:hover{
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
 }
 .content{
     padding-top: 0;    
     font-family: $primary-font;
     color: $primary-color;     
     width: 70%;
-    margin: 2% auto 40px;
-    min-height: 65vh;    
+    margin: 2% auto 40px;    
     display: flex;
-    
+    flex:1;
     border-radius: 5px;
 }
 .sidebar{
@@ -92,7 +95,7 @@ a{
 }
 .mainContent{
     flex:1;
-    margin: 1% 0;    
+    margin: 1% 0 0;    
     border: 2px solid;
     padding: 1%;
 }
@@ -143,7 +146,16 @@ a{
     display: grid;
     grid-template-columns: repeat(4,2.5rem);
     justify-content: center; 
-    img{height: 25px;}
+    img{
+        border: 1px solid black;
+        border-radius: 99px;
+        height: 25px;
+        transition: transform 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.5);
+            border: 1px solid white;
+        }
+    }
     a{margin: 0 5px;}       
 }
 .teyvat-page .detailVideo .frameWrapper{
@@ -202,8 +214,11 @@ a{
         justify-content: center;
         align-items: center;
         border-radius: 1000px;
+        &:hover{
+            background-color: yellow;
+        } 
     }
-    img{width: 60%;}    
+    img{width: 60%;}   
 }
 
 .arrow {

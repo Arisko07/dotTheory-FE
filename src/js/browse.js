@@ -46,7 +46,9 @@ function createArticles(articles){
 }
 
 function changeView(e){            
-    const browseList = document.querySelector('.browse-list');    
+    const browseList = document.querySelector('.browse-list');
+    document.querySelector('.browse-list .active').classList.remove('active');
+    e.classList.add('active');
     if(e.classList.contains('list-button')){
         browseList.classList.add('list');
         return

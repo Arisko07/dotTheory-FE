@@ -1,3 +1,9 @@
+/* Font */
+/* Font */
+/* Color */
+/* Color */
+/* Images */
+/* Images */
 .about {
   position: relative;
   display: -ms-grid;
@@ -181,7 +187,7 @@
 .about-header h1.active {
   -webkit-transform: scale(2);
           transform: scale(2);
-  color: red;
+  color: #d61616;
 }
 
 .about-header:hover {

@@ -1,10 +1,9 @@
-$primary-font: 'Nunito';
-$primary-color: white;
-$secondary-color:black;
-$background-image: url(../../img/shooting.jpg);
-$header-image: url(../../img/yellowBanner.jpg);
+@import "config";
 
-html{font-family: $primary-font;color:white;}
+html{
+    font-family: $primary-font;
+    color:$primary-color;
+}
 body{margin: 0;}
 a{
     text-decoration: unset;
@@ -18,7 +17,7 @@ a{
     flex-direction: column;      
     min-height: 100vh; 
     flex-grow:1;
-    background-color: aliceblue;
+    background-color: $color-alice-blue;
 }
 .headerContent{
     position: relative;
@@ -115,7 +114,7 @@ a{
     margin: 1% 0;    
 }
 .sideContent a{text-decoration: underline;}
-.sideContent a:hover{color:greenyellow;}
+.sideContent a:hover{color:$color-green-yellow;}
 .contentText{margin-right: 5%;flex:1;}
 .contentText li{display: flex;}
 .contentText img{margin-right: 5%;}
@@ -147,13 +146,13 @@ a{
     grid-template-columns: repeat(4,2.5rem);
     justify-content: center; 
     img{
-        border: 1px solid black;
+        border: 1px solid $secondary-color;
         border-radius: 99px;
         height: 25px;
         transition: transform 0.2s ease-in-out;
         &:hover{
             transform: scale(1.5);
-            border: 1px solid white;
+            border: 1px solid $primary-color;
         }
     }
     a{margin: 0 5px;}       
@@ -176,7 +175,7 @@ a{
 .commentSection label,.commentSection textarea,.commentSection input{display: block;width: 100%;}
 .comment-container{
     margin: 0 10% 5% 10%;
-    color:$primary-color;
+    color: $primary-color;
 }
 .comment-container strong{
     text-transform: capitalize;
@@ -189,8 +188,8 @@ a{
     padding: 2%;
     box-shadow: 1px 1px 4px $secondary-color;
     border-radius: 15px;
-    background-color: rgba(0,0,0,0.5);
-    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(102,178,255,0.5));
+    background-color: rgba($secondary-color,0.5);
+    background: linear-gradient(90deg, rgba(rgba($secondary-color,0.5),0.5), rgba($color-light-azure, 0.5));
 }
 .comment-article{
     //Flex-style
@@ -215,7 +214,7 @@ a{
         align-items: center;
         border-radius: 1000px;
         &:hover{
-            background-color: yellow;
+            background-color: $color-yellow;
         } 
     }
     img{width: 60%;}   

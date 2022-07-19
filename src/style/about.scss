@@ -1,3 +1,5 @@
+@import "config";
+
 .about{
     position: relative;
     display: grid;
@@ -12,8 +14,8 @@
         transition: 0.5s ease-out;
         transform: translateX(-100%);
         border-radius: 30px;
-        background-color: black;
-        color: black;
+        background-color: $secondary-color;
+        color: $secondary-color;
         padding: 5%;        
         .tile-back{
             transform: rotateY(-180deg);
@@ -48,7 +50,7 @@
         }
         &:hover{
             transform: scale(1.1);
-            background-color: whitesmoke;
+            background-color: $color-white-smoke;
             z-index: 99;                        
             p{
                 transition: 0.3s 0.5s;
@@ -111,7 +113,7 @@
             margin: 0 10px;
             &.active{
                 transform: scale(2);
-                color: red;
+                color: $color-red-lava;
             }                
         }
         &:hover{                
@@ -198,7 +200,7 @@
         bottom:0;
         right: 0;
         left: 0;
-        background-color: white !important;
+        background-color: $primary-color !important;
         img{
             object-fit: contain;
             width: 100%;
@@ -208,26 +210,22 @@
     .side-1{
         transform: translateZ(25px);
     }
-    .side-2{
-        //background-color: red;
+    .side-2{        
         transform-origin: bottom left;
         transform: rotateX(90deg) translateY(25px);
     }
-    .side-3{
-        //background-color: green;
+    .side-3{        
         transform-origin: top right;
         transform: rotateX(-90deg) translateY(-25px);
         img{
             transform: rotate(180deg);
         }
     }
-    .side-4{
-        //background-color: blue;
+    .side-4{        
         transform-origin: right;
         transform: rotateY(-90deg) translateX(25px);
     }
-    .side-5{
-        //background-color: yellow;
+    .side-5{        
         transform-origin: left;
         transform: rotateY(90deg) translateX(-25px);
     }

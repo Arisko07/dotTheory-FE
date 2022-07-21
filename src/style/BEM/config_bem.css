@@ -1,0 +1,29 @@
+:root{
+    
+/* Font */
+
+--primary-font: 'Nunito';
+
+/* Font */
+
+/* Color */
+
+--primary-color: white;
+--secondary-color:black;
+--color-alice-blue: aliceblue;
+--color-green-yellow: greenyellow;
+--color-white-smoke: whitesmoke;
+--color-light-azure: #66b2ff;
+--color-yellow: yellow;
+--color-orange: orange;
+--color-antique-white :antiquewhite;
+--color-red-lava: #d61616;
+/* Color */
+
+/* Images */
+
+--background-image: url(../../img/shooting.jpg);
+--header-image: url(../../img/yellowBanner.jpg);
+
+/* Images */
+}

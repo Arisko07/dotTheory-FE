@@ -1,7 +1,8 @@
 @import "config_bem.css";
-@import "header.css";
-@import "footer.css";
-@import "link.css";
+@import "_header.css";
+@import "_footer.css";
+@import "_search_bar.css";
+@import "_link.css";
 
 html {
     font-family: "Nunito";
@@ -15,6 +16,14 @@ margin: 0;
 a {
 text-decoration: unset;
 color: unset;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 .float-left{
     position: absolute;

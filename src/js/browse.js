@@ -28,12 +28,12 @@ async function fetchArticles(){
     createArticles(articles)
 } 
 function createArticles(articles){
-    let articleContainer = document.querySelector(".browse-list");    
+    let articleContainer = document.querySelector(".browse");    
     articles.articles.forEach( article => {
         articleContainer.innerHTML+=`
         <a class="${article.type}" href="${article.source}">
         <section class="section-item ${article.type}">
-            <img class="list" src="../../img/${article.img}">
+            <img class="browse__section-image" src="../../img/${article.img}">
             <div>
                 <h1>${article.header}</h1>
                 <p>${article.content}</p>
@@ -46,12 +46,13 @@ function createArticles(articles){
 }
 
 function changeView(e){            
-    const browseList = document.querySelector('.browse-list');
-    document.querySelector('.browse-list .active').classList.remove('active');
-    e.classList.add('active');
-    if(e.classList.contains('list-button')){
-        browseList.classList.add('list');
+    const browseList = document.querySelector('.browse');
+    document.querySelector('.browse .browse__button-active').classList.remove('browse__button-active');
+    e.classList.add('browse__button-active');
+    if(e.classList.contains('browse__button-list')){
+        browseList.classList.add('browse__list');
         return
     }
-    browseList.classList.remove('list');
+    console.log("aa")
+    browseList.classList.remove('browse__list');
 }    

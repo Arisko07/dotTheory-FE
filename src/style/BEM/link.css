@@ -1,13 +1,15 @@
 .link{    
     display: flex;
     align-items: center;
-    background-color: var(--primary-color);
     box-sizing: border-box;
-    height: calc(100% - 10px);
-    padding: 10px;
+    height: calc(100% - 10px);    
     z-index: 99;
+    border: 1px solid black;
+    transition: 0.2s ease-in;
 }
+
 .link__image{    
+    transition: 0.2s ease-in;
     width: 100%;
     height: 100%;
 }
@@ -15,6 +17,27 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+.link__bg-white{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);    
+}
 .link__circle{
     border-radius: 100%;
 }
+.link__padding{
+    padding: 10px;
+}
+
+/* Hover States */
+
+.link:hover{
+    border: 1px solid white;
+}
+.link__bg-black:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);    
+}
+.link__scale:hover img{
+    transform: scale(1.3);
+}
+/* Hover States */

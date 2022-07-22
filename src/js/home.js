@@ -1,5 +1,3 @@
-const articleListContainer = '../json/articleList.json';
-
 function handleCategoryClick(e){        
     const articleContainer = e.closest('.browse');
     const activeButton = document.querySelector('.active');    

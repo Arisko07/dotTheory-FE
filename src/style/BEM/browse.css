@@ -6,6 +6,7 @@
     margin: 50px 17%;
     background-color: rgba(0,0,0, 0.3);
     padding: 3% 0;
+    row-gap: 10px;
     border-radius: 20px;
 }
 .browse p{
@@ -67,6 +68,7 @@
     grid-template-columns: 1fr 6fr;
 }
 .browse__list .section-item.character img {
+    min-width: 128px;
     padding: 0 15px;    
     object-fit: contain;
 }
@@ -106,18 +108,21 @@
         margin: 20px;
     }
     .browse__list{
-        margin: 50px;
+        margin: 5%;
     }
     .browse__list .section-item{
         grid-template-columns: 1fr;
     }
+    .browse__list .browse__section-image{        
+        padding: 30px;            
+    }
     .browse__list .section-item div:nth-of-type(1) {
-        padding: 0 15px;
+        padding: 0 30px 20px 30px;
     }
     .browse__list .section-item.character {    
         grid-template-columns: 1fr;
     }
     .browse__list .section-item.character img {
-        padding: 20px 200px 0;
+        padding: 20px 20px 0;
     }
 }

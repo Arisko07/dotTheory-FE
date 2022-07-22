@@ -1,4 +1,7 @@
 const articleContainer = document.querySelector(".browse");
+const hotNewsContainer = document.querySelector(".hot-news");
+const articleListContainer = '../json/articleList.json';
+const hotNewsListContainer = '../json/hotNews.json';
 
 function readHTML(){
     const moduleContainer = document.querySelectorAll('[data-module]');
@@ -37,15 +40,13 @@ function createTable(text,character){
     });
     character.innerHTML = detailHTML;
 }
-async function fetchArticles(){
-    console.log("aa")
+async function fetchArticles(){    
     const request = new Request(articleListContainer);
     const response = await fetch(request);
     const articles = await response.json();            
     createArticles(articles)
 }
-function createArticles(articles){     
-    console.log(articleListContainer)   
+function createArticles(articles){          
     articles.articles.forEach( article => {
         articleContainer.innerHTML+=`
         <a class="${article.type}" href="${article.source}">
@@ -61,6 +62,30 @@ function createArticles(articles){
         `
     });
 }
+async function fetchHotNews(){
+    const request = new Request(hotNewsListContainer);
+    const response = await fetch(request);
+    const hotNews = await response.json();            
+    createHowNews(hotNews)
+}
+function createHowNews(hotNews){
+    hotNews.hotNews.forEach(news => {        
+        const {image,heading,description,date,type} = news;
+        hotNewsContainer.innerHTML+=`
+        <article>
+            <div class="art-wrapper">
+                <img src="../../img/${image}">
+            </div>
+            <h3>${heading}</h3>
+            <p>${description}</p>
+            <div class="art-footer">
+                <span>${date}</span>
+                <span><strong>${type}</strong></span>
+            </div>
+        </article>
+    `});
+}
+hotNewsContainer && fetchHotNews();
 articleContainer && fetchArticles();
 readHTML();
 readCharacterDetails();

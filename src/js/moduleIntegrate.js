@@ -72,13 +72,13 @@ function createHowNews(hotNews){
     hotNews.hotNews.forEach(news => {        
         const {image,heading,description,date,type} = news;
         hotNewsContainer.innerHTML+=`
-        <article>
-            <div class="art-wrapper">
+        <article class="hot-news__article">
+            <div class="hot-news__image art-wrapper">
                 <img src="../../img/${image}">
             </div>
-            <h3>${heading}</h3>
-            <p>${description}</p>
-            <div class="art-footer">
+            <h3 class="hot-news__heading">${heading}</h3>
+            <p class="hot-news__description">${description}</p>
+            <div class="hot-news__date art-footer">
                 <span>${date}</span>
                 <span><strong>${type}</strong></span>
             </div>

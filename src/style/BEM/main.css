@@ -3,6 +3,7 @@
 @import "_footer.css";
 @import "_search_bar.css";
 @import "_link.css";
+@import "_hot-news.css";
 
 html {
     font-family: "Nunito";
@@ -44,4 +45,15 @@ color: unset;
 }
 .full-width{
     height: 100%;
+}
+.content{
+    font-family: var(--primary-font);
+    width: 70%;
+    color: var(--primary-color);
+    margin: 5% auto 40px;
+}
+@media screen and (max-width: 750px) {
+    .content{
+        width: 90%;
+    }
 }

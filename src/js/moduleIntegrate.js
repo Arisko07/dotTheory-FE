@@ -1,3 +1,5 @@
+const articleContainer = document.querySelector(".browse");
+
 function readHTML(){
     const moduleContainer = document.querySelectorAll('[data-module]');
     moduleContainer.forEach(modules => {
@@ -35,6 +37,31 @@ function createTable(text,character){
     });
     character.innerHTML = detailHTML;
 }
+async function fetchArticles(){
+    console.log("aa")
+    const request = new Request(articleListContainer);
+    const response = await fetch(request);
+    const articles = await response.json();            
+    createArticles(articles)
+}
+function createArticles(articles){     
+    console.log(articleListContainer)   
+    articles.articles.forEach( article => {
+        articleContainer.innerHTML+=`
+        <a class="${article.type}" href="${article.source}">
+        <section class="section-item ${article.type}">
+            <img class="browse__section-image" src="../../img/${article.img}">
+            <div>
+                <h1>${article.header}</h1>
+                <p>${article.content}</p>
+            </div>
+            <p class="date-item">${article.date}</p>           
+        </section>
+        </a>
+        `
+    });
+}
+articleContainer && fetchArticles();
 readHTML();
 readCharacterDetails();
 /*rebranching fe101*/

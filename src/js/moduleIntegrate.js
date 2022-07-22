@@ -1,7 +1,9 @@
 const articleContainer = document.querySelector(".browse");
 const hotNewsContainer = document.querySelector(".hot-news");
+const nationsContainer = document.querySelector(".nation");
 const articleListContainer = '../json/articleList.json';
 const hotNewsListContainer = '../json/hotNews.json';
+const nationListContainer = '../json/nationList.json';
 
 function readHTML(){
     const moduleContainer = document.querySelectorAll('[data-module]');
@@ -40,11 +42,13 @@ function createTable(text,character){
     });
     character.innerHTML = detailHTML;
 }
-async function fetchArticles(){    
-    const request = new Request(articleListContainer);
+async function fetchJSON(type, targetJSON){
+    const request = new Request(targetJSON);
     const response = await fetch(request);
-    const articles = await response.json();            
-    createArticles(articles)
+    const result = await response.json();
+    if (type === 'articles') createArticles(result);
+    else if (type === 'hot-news') createHotNews(result);
+    else if (type === 'nation') createNations(result);
 }
 function createArticles(articles){          
     articles.articles.forEach( article => {
@@ -62,13 +66,7 @@ function createArticles(articles){
         `
     });
 }
-async function fetchHotNews(){
-    const request = new Request(hotNewsListContainer);
-    const response = await fetch(request);
-    const hotNews = await response.json();            
-    createHowNews(hotNews)
-}
-function createHowNews(hotNews){
+function createHotNews(hotNews){
     hotNews.hotNews.forEach(news => {        
         const {image,heading,description,date,type} = news;
         hotNewsContainer.innerHTML+=`
@@ -85,8 +83,24 @@ function createHowNews(hotNews){
         </article>
     `});
 }
-hotNewsContainer && fetchHotNews();
-articleContainer && fetchArticles();
+function createNations(nations){
+    let nationList = '<ul class="nation__list">';
+    nations.nation.forEach(nation => {
+        const {background,heading,image} = nation;
+        nationList+=`
+        <li class="nation__item">
+            <div class="nation__background background-image" style="background-image: url(../../img/${background});"></div>
+            <h1 class="nation__heading">${heading}</h1>
+            <img class="nation__image character-icon" src="../../img/${image}">
+        </li>
+        `
+    });
+    nationList+='</ul>'
+    nationsContainer.innerHTML += nationList;    
+}
+articleContainer && fetchJSON('articles',articleListContainer);
+hotNewsContainer && fetchJSON('hot-news',hotNewsListContainer);
+nationsContainer && fetchJSON('nation',nationListContainer);
 readHTML();
 readCharacterDetails();
 /*rebranching fe101*/

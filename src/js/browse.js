@@ -1,5 +1,4 @@
 const pagelistContainer = '../json/pageList.json';
-const articleListContainer = '../json/articleList.json';
 
 async function fetchPage(){
     const request = new Request(pagelistContainer);

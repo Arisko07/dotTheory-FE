@@ -4,6 +4,7 @@
 @import "_search_bar.css";
 @import "_link.css";
 @import "_hot-news.css";
+@import "_nation-list.css";
 
 html {
     font-family: "Nunito";
@@ -54,6 +55,6 @@ color: unset;
 }
 @media screen and (max-width: 750px) {
     .content{
-        width: 90%;
+        width: 100%;
     }
 }

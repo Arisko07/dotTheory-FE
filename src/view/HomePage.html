@@ -1,44 +1,26 @@
 <html class="home-page">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style/main.css">
-        <link rel="stylesheet" href="../style/home.css">
+        <link rel="stylesheet" href="../style/BEM/main.css">
+        <link rel="stylesheet" href="../style/BEM/browse.css">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nunito">
         <Title>Home</Title>
     </head>
     <body>
         <section class="main-section">
-            <div data-module="../modules/header.html" data-settings='{"src":"../view/BrowsePage.html","img":"../../img/browseLogo.png"}'></div>
+            <div data-module="../modules/header_bem.html" data-settings='{"src":"../view/BrowsePage.html","img":"../../img/browseLogo.png"}'></div>
             <div class="content">                
                 <section class="hot-news"></section>
-                <section class="major-nation">
-                    <ul>
-                        <li>
-                            <div class="background-image" style="background-image: url(../../img/mons.jpg);"></div>
-                            <h1>Mondstadt</h1>
-                            <img class="character-icon" src="../../img/jean.png">
-                        </li>
-                        <li>
-                            <div class="background-image" style="background-image: url(../../img/liyue.jpg);"></div>
-                            <h1>Liyue</h1>
-                            <img class="character-icon" src="../../img/xiao.png">
-                        </li>
-                        <li>
-                            <div class="background-image" style="background-image: url(../../img/inazuma.jpg);"></div>
-                            <h1>Inazuma</h1>
-                            <img class="character-icon" src="../../img/ayaka.png">
-                        </li>
-                    </ul>
-                </section>                                                         
+                <section class="nation"></section>                                                         
             </div><!--content-->            
-            <div class="article-list browse" data-category="events">
+            <div class="home browse browse__list" data-category="events">
                 <header>
-                    <button class="active" onclick="handleCategoryClick(this)">Events</button>
-                    <button onclick="handleCategoryClick(this)">Character</button>
-                    <button onclick="handleCategoryClick(this)">Info</button>
+                    <button class="browse__button-home browse__button-home-active" onclick="handleCategoryClick(this)">Events</button>
+                    <button class="browse__button-home" onclick="handleCategoryClick(this)">Character</button>
+                    <button class="browse__button-home" onclick="handleCategoryClick(this)">Info</button>
                 </header>
             </div>
-            <div data-module="../modules/footer.html"></div>
+            <div data-module="../modules/footer_bem.html"></div>
         </section>        
         <script type="text/javascript" src="../js/home.js"></script>
         <script src="../js/moduleIntegrate.js"></script>

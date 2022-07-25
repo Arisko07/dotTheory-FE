@@ -89,7 +89,7 @@ function createHotNews(hotNews){
 }
 function createNations(nations){
     let nationList = '<ul class="nation__list">';
-    nation.forEach(nation => {
+    nations.forEach(nation => {
         const {background,heading,image} = nation;
         nationList+=`
         <li class="nation__item">

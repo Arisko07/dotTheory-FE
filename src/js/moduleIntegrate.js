@@ -1,14 +1,14 @@
 const articleContainer = document.querySelector(".browse");
 const hotNewsContainer = document.querySelector(".hot-news");
-const nationsContainer = document.querySelector(".nation");
+const nationsContainer = document.querySelector(".nations");
 const articleListContainer = '../json/articleList.json';
 const hotNewsListContainer = '../json/hotNews.json';
 const nationListContainer = '../json/nationList.json';
 
 function readHTML(){
     const moduleContainer = document.querySelectorAll('[data-module]');
-    moduleContainer.forEach(modules => {
-        const refHTML = modules.dataset.module;        
+    moduleContainer.forEach(modules => {        
+        const refHTML = `../modules/${modules.dataset.module}.html`
         fetch(`${refHTML}`).then(response => response.text()).then(text => {
             const settings = modules.dataset.settings && JSON.parse(modules.dataset.settings);
             let moduleText = text;
@@ -17,6 +17,7 @@ function readHTML(){
                     moduleText = moduleText.replace(`data-${item[0]}`,`${item[1]}`)
                 })
             }
+            modules.removeAttribute('data-settings');            
             modules.innerHTML = moduleText;
         });        
     });    

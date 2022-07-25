@@ -1,19 +1,17 @@
-{    
-    "nation":[        
-        {
-            "background":"mons.jpg",
-            "heading":"Mondstadt",
-            "image":"jean.png"
-        },
-        {
-            "background":"liyue.jpg",
-            "heading":"Liyue",
-            "image":"xiao.png"
-        },
-        {
-            "background":"inazuma.jpg",
-            "heading":"Inazuma",
-            "image":"ayaka.png"
-        }
-    ]
-}
+[        
+    {
+        "background":"mons.jpg",
+        "heading":"Mondstadt",
+        "image":"jean.png"
+    },
+    {
+        "background":"liyue.jpg",
+        "heading":"Liyue",
+        "image":"xiao.png"
+    },
+    {
+        "background":"inazuma.jpg",
+        "heading":"Inazuma",
+        "image":"ayaka.png"
+    }
+]

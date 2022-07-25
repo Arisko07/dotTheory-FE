@@ -10,7 +10,7 @@
     </head>
     <body>     
         <section class="main-section">                        
-            <div data-module="../modules/header.html" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
+            <div data-module="header" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
             <div class="content">
                 <main class="mainContent">
                     <article class="contentArticle">
@@ -26,24 +26,8 @@
                 </main>
                 <div class="sideBar"></div>
                 <aside class="sideContent">
-                    <button class="drag-article" onclick="openNav()">
-                        <i class="arrow right"></i>
-                    </button>
-                    <div class="sections">
-                        <div class="sideArticle"><h2>Guides</h2></div>
-                        <div class="sideArticle">
-                            <a href="https://www.youtube.com/watch?v=Bp_GgNSy8eU">Beginners Guide</a>
-                        </div>
-                        <div class="sideArticle">
-                            <a href="https://docs.google.com/spreadsheets/d/1gNxZ2xab1J6o1TuNVWMeLOZ7TPOqrsf3SshP5DLvKzI/htmlview?pru=AAABdXYM80o*xMxXJdNbCCZ-v9FLVh6EXg#">Character Reference</a>
-                        </div>
-                    </div>                
-                    <div class="sections">
-                        <div class="sideArticle"><h2>References</h2></div>
-                        <div class="sideArticle"><a href="https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki">Genshin Wiki</a></div>
-                        <div class="sideArticle"><a href="https://www.youtube.com/c/GenshinImpact">Genshin Youtube</a></div>
-                    </div>
-                    <div data-module="../modules/commentSection.html"></div><!--commentSection-->
+                    <div data-module="sideContent"></div>
+                    <div data-module="commentSection"></div><!--commentSection-->
                 </aside>
             </div> <!--content-->
             
@@ -53,14 +37,9 @@
                     <div class="character-table" data-table="ayaka"></div>                  
                 </article>
             </div>
-            <div class="detailVideo">
-                <h1>The Homeward Heron</h1>
-                <div class="frameWrapper">
-                    <iframe style="width: 100%;height: 100%;position: absolute;" src="https://www.youtube.com/embed/vsCO7C416bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div><!--Embedded Video-->
-            <div data-module="../modules/userFeedback.html"></div>
-            <div data-module="../modules/footer.html"></div>
+            <div data-module="videoContent" data-settings='{"video":"https://www.youtube.com/embed/vsCO7C416bs","heading":"The Homeward Heron"}'></div>          
+            <div data-module="userFeedback"></div>
+            <div data-module="footer"></div>
         <section>
     </body>
     

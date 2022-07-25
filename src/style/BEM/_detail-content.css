@@ -1,0 +1,12 @@
+.content-detail{    
+    flex: 1;
+    margin: 1% 0 0;
+    border: 2px solid;
+    padding: 1%;
+}
+.content-detail__description{
+    margin-right: 5%;
+}
+.content-detail__image{
+    width: 100%;
+}

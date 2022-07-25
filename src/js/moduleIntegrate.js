@@ -104,16 +104,14 @@ function createNations(nations){
 }
 function createDetailPage(articles){   
    const {header, content, img} = articles.find(x => x.id === detailsContainer.id);
-   detailsContainer.innerHTML+=`
-   <article class="contentArticle">
-        <div class="contentText">
-            <h1>${header}</h1>                            
-            <p>${content}</p>            
-        </div>
-        <figure class="contentImage">
-            <img alt="Teyvat Photo" src="../../img/${img.portrait}">
-        </figure>
-    </article>
+   detailsContainer.innerHTML+=`   
+    <div class="contentText">
+        <h1>${header}</h1>                            
+        <p>${content}</p>            
+    </div>
+    <figure class="contentImage">
+        <img alt="Teyvat Photo" src="../../img/${img.portrait}">
+    </figure>    
    `
 }
 readHTML();

@@ -10,7 +10,7 @@ function createNation(nations){
     let nationContainer = document.querySelector(".nation-list");
     if(!nationContainer)return;
     console.log(nations);
-    nations.majorNation.forEach( nation => {
+    nations.forEach( nation => {
         nationContainer.innerHTML +=`
         <div class="nation">
             <div class="emblem"><img src="../../img/${nation.nation[0]}"><h1>${nation.nation[1]}</h1></div>

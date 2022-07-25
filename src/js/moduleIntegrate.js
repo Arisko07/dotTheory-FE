@@ -1,6 +1,7 @@
 const articleContainer = document.querySelector(".browse");
 const hotNewsContainer = document.querySelector(".hot-news");
 const nationsContainer = document.querySelector(".nations");
+const detailsContainer = document.querySelector(".detail-content");
 const articleListContainer = '../json/articleList.json';
 const hotNewsListContainer = '../json/hotNews.json';
 const nationListContainer = '../json/nationList.json';
@@ -50,25 +51,27 @@ async function fetchJSON(type, targetJSON){
     if (type === 'articles') createArticles(result);
     else if (type === 'hot-news') createHotNews(result);
     else if (type === 'nation') createNations(result);
+    else if (type === 'detail') createDetailPage(result);
 }
 function createArticles(articles){          
-    articles.articles.forEach( article => {
+    articles.forEach( article => {
+        const {type,source,img,header,content,date} = article;
         articleContainer.innerHTML+=`
-        <a class="${article.type}" href="${article.source}">
-        <section class="section-item ${article.type}">
-            <img class="browse__section-image" src="../../img/${article.img}">
+        <a class="${type}" href="${source}">
+        <section class="section-item ${type}">
+            <img class="browse__section-image" src="../../img/${img.thumbnail}">
             <div>
-                <h1>${article.header}</h1>
-                <p>${article.content}</p>
+                <h1>${header}</h1>
+                <p>${content}</p>
             </div>
-            <p class="date-item">${article.date}</p>           
+            <p class="date-item">${date}</p>           
         </section>
         </a>
         `
     });
 }
 function createHotNews(hotNews){
-    hotNews.hotNews.forEach(news => {        
+   hotNews.forEach(news => {        
         const {image,heading,description,date,type} = news;
         hotNewsContainer.innerHTML+=`
         <article class="hot-news__article">
@@ -86,7 +89,7 @@ function createHotNews(hotNews){
 }
 function createNations(nations){
     let nationList = '<ul class="nation__list">';
-    nations.nation.forEach(nation => {
+    nation.forEach(nation => {
         const {background,heading,image} = nation;
         nationList+=`
         <li class="nation__item">
@@ -99,9 +102,24 @@ function createNations(nations){
     nationList+='</ul>'
     nationsContainer.innerHTML += nationList;    
 }
+function createDetailPage(articles){   
+   const {header, content, img} = articles.find(x => x.id === detailsContainer.id);
+   detailsContainer.innerHTML+=`
+   <article class="contentArticle">
+        <div class="contentText">
+            <h1>${header}</h1>                            
+            <p>${content}</p>            
+        </div>
+        <figure class="contentImage">
+            <img alt="Teyvat Photo" src="../../img/${img.portrait}">
+        </figure>
+    </article>
+   `
+}
+readHTML();
+readCharacterDetails();
 articleContainer && fetchJSON('articles',articleListContainer);
 hotNewsContainer && fetchJSON('hot-news',hotNewsListContainer);
 nationsContainer && fetchJSON('nation',nationListContainer);
-readHTML();
-readCharacterDetails();
+detailsContainer && fetchJSON('detail',articleListContainer);
 /*rebranching fe101*/

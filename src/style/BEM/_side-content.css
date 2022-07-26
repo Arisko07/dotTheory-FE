@@ -3,6 +3,7 @@
     margin: 1% 0;
 }
 .side-content a{text-decoration: underline;}
+.side-content a:hover{color: var(--color-green-yellow);}
 .side-content h2{margin-top: 0;}
 .side-content .arrow{    
     border: solid white;
@@ -57,7 +58,11 @@
     font-weight: bold;
     text-transform: uppercase;
 }
-
+.side-content__comment-button:hover{
+    color: var(--color-white-smoke);
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px var(--color-white-smoke);
+}
 @media screen and (max-width: 750px) {
     .side-content__drag-button{
         display: block;

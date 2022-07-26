@@ -6,6 +6,12 @@
 @import "_hot-news.css";
 @import "_nation-list.css";
 
+@import "_detail-content.css";
+@import "_side-content.css";
+@import "_character-table.css";
+@import "_detail-video.css";
+@import "_user-feedback.css";
+
 html {
     font-family: "Nunito";
     color: white;
@@ -48,11 +54,13 @@ color: unset;
     height: 100%;
 }
 .content{
+    display: flex;
     font-family: var(--primary-font);
     width: 70%;
     color: var(--primary-color);
     margin: 5% auto 40px;
 }
+.content.table{flex-direction: column;}
 @media screen and (max-width: 750px) {
     .content{
         width: 100%;

@@ -1,0 +1,27 @@
+.user-feedback{
+    margin: 0 10% 5% 10%;
+    color: var(--primary-color);
+}
+.user-feedback__header{
+    text-shadow: 2px 2px 5px var(--secondary-color);
+}
+.user-feedback__container{
+    display: flex;    
+    flex-wrap: wrap;
+}
+.user-feedback__comments{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    min-width: 28%;
+    padding: 2%;    
+    box-shadow: 1px 1px 4px var(--secondary-color);
+    border-radius: 15px;        
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(102, 178, 255, 0.5));
+}
+.user-feedback__comments strong {
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+.user-feedback__comments p {
+    margin: 0;
+}

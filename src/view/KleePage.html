@@ -1,8 +1,7 @@
 <html class="teyvat-page">
     <head>      
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style/main.css">      
-        <link rel="stylesheet" href="../style/detail.css">
+        <link rel="stylesheet" href="../style/BEM/main.css">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nunito">        
         <Title>Klee</Title>
         <style>            
@@ -10,25 +9,25 @@
     </head>
     <body>     
         <section class="main-section">                        
-            <div data-module="header" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
+            <div data-module="header_bem" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
             <div class="content">
                 <main class="mainContent detail-content" id="klee"></main>
-                <div class="sideBar"></div>
-                <aside class="sideContent">
-                    <div data-module="sideContent"></div>
-                    <div data-module="commentSection"></div><!--commentSection-->
+                <div class="side-content__sidebar"></div>
+                <aside class="sideContent side-content">
+                    <div data-module="sideContent_bem"></div>
+                    <div data-module="commentSection_bem"></div><!--commentSection-->
                 </aside>
             </div> <!--content-->
             
             <div class="content">
                 <article class="contentText">
-                    <h2 class="topBorderHeading">Character Details</h2>
+                    <h2 class="character-table_heading">Character Details</h2>
                     <div class="character-table" data-table="klee"></div>                  
                 </article>
             </div>
-            <div data-module="videoContent" data-settings='{"video":"https://www.youtube.com/embed/C_duDk5e8yU","heading":"Da-Da Da!"}'></div>
+            <div data-module="videoContent_bem" data-settings='{"video":"https://www.youtube.com/embed/C_duDk5e8yU","heading":"Da-Da Da!"}'></div>
             <div data-module="userFeedback"></div>
-            <div data-module="footer"></div>
+            <div data-module="footer_bem"></div>
         <section>
     </body>
     

@@ -1,3 +1,4 @@
+.nation-list,
 .character-table{
     border: 1px solid;
     margin: 0 5%;
@@ -29,4 +30,47 @@
 }
 .character-table_description{
     padding: 0 20px;
+}
+.nation-list .nation-header {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-top: 0;
+}
+.nation-list .nation div:nth-child(5),
+.nation-list .nation-header div:nth-child(5){
+    border-right: 0;
+}  
+.nation-list .nation {    
+    display: grid; 
+    grid-template-columns: 2fr 2fr repeat(3, 3fr);
+    border-top: 1px solid;
+}
+.nation-list .nation span{text-align: center;}
+.nation-list .nation > *{
+    border-right: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+}
+.element,
+.emblem{flex-direction: column;}
+.element img,
+.emblem img{width: 80%;}
+img,h1{margin:0;}
+@media screen and (max-width: 1080px) {
+    .contentText {
+        font-size: 12px;
+        margin: 0 5%;        
+        flex: 1;
+    }
+    .nation-list,
+    .character-table{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .nation-list h1{font-size: 0.75em;}
 }

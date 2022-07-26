@@ -35,7 +35,7 @@ function createTable(text,character){
     details.forEach(detail => {
         detailHTML+=`
         <div class="character-table_header">
-            <img src="../../img//${detail.icon}">
+            <img class="character-table_header-image" src="../../img//${detail.icon}">
             <div class="character-table_detail">${detail.name}</div>
             <div class="character-table_detail">${detail.type}</div>
         </div>
@@ -105,11 +105,11 @@ function createNations(nations){
 function createDetailPage(articles){   
    const {header, content, img} = articles.find(x => x.id === detailsContainer.id);
    detailsContainer.innerHTML+=`   
-    <div class="contentText">
+    <div class="contentText detail-content__description">
         <h1>${header}</h1>                            
         <p>${content}</p>            
     </div>
-    <figure class="contentImage">
+    <figure class="contentImage detail-content__image">
         <img alt="Teyvat Photo" src="../../img/${img.portrait}">
     </figure>    
    `

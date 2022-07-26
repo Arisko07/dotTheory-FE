@@ -39,7 +39,7 @@ function submitForm(){
         userName.style.backgroundColor ="white";
         comment.style.backgroundColor ="white";                
         commentSection =`
-        <article class="userComments">
+        <article class="userComments user-feedback__comments">
             <strong>${userName.value}</strong>
             <p><i>“${comment.value}”</i></p>
         </article>

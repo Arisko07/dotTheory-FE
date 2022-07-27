@@ -9,6 +9,7 @@
     max-width: 1600px;
     margin: 100px auto;
     font-size: 15px;
+    flex: 1;
     &-article{
         opacity: 0;
         transition: 0.5s ease-out;

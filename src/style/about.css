@@ -16,6 +16,9 @@
   max-width: 1600px;
   margin: 100px auto;
   font-size: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .about-article {

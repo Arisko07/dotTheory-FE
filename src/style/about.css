@@ -1,3 +1,9 @@
+/* Font */
+/* Font */
+/* Color */
+/* Color */
+/* Images */
+/* Images */
 .about {
   position: relative;
   display: -ms-grid;
@@ -10,6 +16,9 @@
   max-width: 1600px;
   margin: 100px auto;
   font-size: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .about-article {
@@ -181,7 +190,7 @@
 .about-header h1.active {
   -webkit-transform: scale(2);
           transform: scale(2);
-  color: red;
+  color: #d61616;
 }
 
 .about-header:hover {

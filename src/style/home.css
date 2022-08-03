@@ -1,3 +1,9 @@
+/* Font */
+/* Font */
+/* Color */
+/* Color */
+/* Images */
+/* Images */
 /*home page style*/
 .home-page .content {
   display: -webkit-box;
@@ -56,7 +62,7 @@
   position: relative;
   overflow: hidden;
   width: 380px;
-  width: 90.47619047619048%;
+  width: 90%;
   height: 0;
   padding-bottom: 50%;
   background-size: cover;

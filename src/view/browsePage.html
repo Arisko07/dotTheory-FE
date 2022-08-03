@@ -2,19 +2,20 @@
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style/browse.css">
-        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../style/BEM/browse.css">
+        <link rel="stylesheet" href="../style/BEM/main.css">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nunito">
         <Title>Browse</Title>
     </head>
     <body>
         <section class="main-section">
-            <div data-module="../modules/header.html" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
+            <div data-module="header_bem" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
             <div class="main-content">    
-                <h1 class="page-not-found">Page Not Found</h1>            
-                <div class="search-bar">
-                    <label for="article ">Choose Your Article</label>
-                    <div class="search-group">
-                        <input list="articles" name="article" id="article">
+                <h1 class="page-not-found">Page Not Found</h1>
+                <div class="search">
+                    <label for="article">Choose Your Article</label>
+                    <div class="search__bar">
+                        <input class="search__input" list="articles" name="article" id="article">
                         <datalist id="articles">
                             <option value="Teyvat">
                             <option value="Ayaka">
@@ -22,17 +23,17 @@
                             <option value="Albedo">
                             <option value="Kazuha">                            
                         </datalist>
-                        <button type="submit" onclick="fetchPage()">Browse</button>
+                        <button class="search__button" type="submit" onclick="fetchPage()">Browse</button>
                     </div>
-                </div>
-                <section class="browse-list">
-                    <div class="view-button">
-                        <button class="grid-button browse-button active" onclick="changeView(this)"><img src="../../img/border-none-solid.svg"></button>
-                        <button class="list-button browse-button" onclick="changeView(this)"><img src="../../img/bars-solid.svg"></button>
+                </div>   
+                <section class="browse">
+                    <div class="browse__navigation">
+                        <button class="browse__button browse__button-active" onclick="changeView(this)"><img src="../../img/border-none-solid.svg"></button>
+                        <button class="browse__button browse__button-list" onclick="changeView(this)"><img src="../../img/bars-solid.svg"></button>
                     </div>                    
                 </section>
             </div>
-            <div data-module="../modules/footer.html"></div>
+            <div data-module="footer_bem"></div>
         </section>
         <script type="text/javascript" src="../js/browse.js"></script>
         <script src="../js/moduleIntegrate.js"></script>        

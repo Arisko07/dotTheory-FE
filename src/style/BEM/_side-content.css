@@ -1,0 +1,99 @@
+.side-content{
+    width: 30%;
+    margin: 1% 0;
+}
+.side-content a{text-decoration: underline;}
+.side-content a:hover{color: var(--color-green-yellow);}
+.side-content h2{margin-top: 0;}
+.side-content .arrow{    
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;        
+    transition: transform 0.5s;        
+}
+.side-content .arrow.right { transform: rotate(-45deg); }
+.side-content .arrow.left { transform: rotate(135deg); }
+.side-content__sections{
+    border: 2px solid;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.side-content__sidebar {
+    width: 2px;
+    margin: 0.5% 1%;
+}
+.side-content__drag-button{
+    display: none;
+    z-index: 99;
+    background: black;
+    border: 0;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 100%;
+    padding: 20px 10px;
+    border-radius: 0 15px 15px 0;    
+    transition: 1s;
+}
+.side-content__comment-textArea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 50%;
+    margin-bottom: 2%;
+    min-height: 10%;
+}
+.side-content__comment-label h4{
+    margin-bottom: 2%;
+}
+.side-content__comment-textArea,
+.side-content__comment-input,
+.side-content__comment-label{
+    display: block;
+    width: 100%;
+}
+.side-content__comment-button {
+    width: 100%;
+    padding: 5px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.side-content__comment-button:hover{
+    color: var(--color-white-smoke);
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px var(--color-white-smoke);
+}
+@media screen and (max-width: 750px) {
+    .side-content__drag-button{
+        display: block;
+    }    
+    .contentImage{width: 90%;margin: 5%;}    
+    .mainContent {margin: 1% 5%;}
+    .sidebar{display: none;}
+    .side-content {
+        position: absolute;
+        background-color: var(--secondary-color);
+        width: 0%;
+        min-height: 75vw;
+        padding: 5% 0;
+        transition: width 0.5s;        
+    }
+    .side-content__comment,
+    .side-content__sections{display: none;}
+    .side-content.open .side-content__comment,
+    .side-content.open .side-content__sections{display: block;}
+    .side-content.open {
+        width: 50%;
+        padding: 5%;
+    }
+    .side-content.close {
+        width: 0%;
+        padding: 5% 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    .side-content.open {
+        width: 80%;
+        padding: 5%;
+    }
+}

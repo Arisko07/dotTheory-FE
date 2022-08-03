@@ -1,8 +1,7 @@
 <html class="teyvat-page">
     <head>      
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style/main.css">      
-        <link rel="stylesheet" href="../style/detail.css">
+        <link rel="stylesheet" href="../style/BEM/main.css">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nunito">        
         <Title>Teyvat</Title>
         <style>            
@@ -10,46 +9,16 @@
     </head>
     <body>     
         <section class="main-section">                        
-            <div data-module="../modules/header.html" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
+            <div data-module="header_bem" data-settings='{"src":"../view/HomePage.html","img":"../../img/home.png"}'></div>
             <div class="content">
-                <main class="mainContent">
-                    <article class="contentArticle">
-                        <div class="contentText">
-                            <h1>Adventures in Teyvat</h1>
-                            <h4 class="inlineHeading">Teyvat </h4> is the continent that serves as the primary region of Genshin Impact.
-                            <p>You have arrived in Teyvat — a fantasy world where the seven elements flow and converge.</p>
-                            <p>In the distant past, the Archons granted mortals unique elemental abilities. With the help of such powers, people formed a bountiful homeland out of the wilderness.</p>
-                            <p>However, 500 years ago, the collapse of an ancient civilization turned the universe upside down... Though the calamity the world suffered has ceased, peace has yet to be restored.</p>                            
-                        </div>
-                        <figure class="contentImage">
-                            <img alt="Teyvat Photo" src="../../img/map.png">
-                            <figcaption>Map of Teyvat</figcaption>
-                        </figure>
-                    </article>
-                </main>
-                <div class="sideBar"></div>
-                <aside class="sideContent">
-                    <button class="drag-article" onclick="openNav()">
-                        <i class="arrow right"></i>
-                    </button>
-                    <div class="sections">
-                        <div class="sideArticle"><h2>Guides</h2></div>
-                        <div class="sideArticle">
-                            <a href="https://www.youtube.com/watch?v=Bp_GgNSy8eU">Beginners Guide</a>
-                        </div>
-                        <div class="sideArticle">
-                            <a href="https://docs.google.com/spreadsheets/d/1gNxZ2xab1J6o1TuNVWMeLOZ7TPOqrsf3SshP5DLvKzI/htmlview?pru=AAABdXYM80o*xMxXJdNbCCZ-v9FLVh6EXg#">Character Reference</a>
-                        </div>
-                    </div>                
-                    <div class="sections">
-                        <div class="sideArticle"><h2>References</h2></div>
-                        <div class="sideArticle"><a href="https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki">Genshin Wiki</a></div>
-                        <div class="sideArticle"><a href="https://www.youtube.com/channel/UC7mUoVEsTSf2dVlvs8tB75A">MELOO</a></div>
-                    </div>
-                    <div data-module="../modules/commentSection.html"></div><!--commentSection-->
+                <main class="mainContent detail-content" id="teyvat"></main>
+                <div class="side-content__sidebar"></div>
+                <aside class="sideContent side-content">
+                    <div data-module="sideContent_bem"></div>
+                    <div data-module="commentSection_bem"></div><!--commentSection-->
                 </aside>
             </div> <!--content-->
-            <div class="content">
+            <div class="content table">
                 <article class="contentText">
                     <h2 class="topBorderHeading">Major Nations</h2>
                     <div class="nation-list">
@@ -63,14 +32,9 @@
                     </div>                    
                 </article>
             </div>
-            <div class="detailVideo">
-                <h1>Characters in Teyvat</h1>
-                <div class="frameWrapper">
-                    <iframe style="width: 100%;height: 100%;position: absolute;" src="https://www.youtube.com/embed/1I5I_NoCDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div><!--Embedded Video-->
-            <div data-module="../modules/userFeedback.html"></div>
-            <div data-module="../modules/footer.html"></div>
+            <div data-module="videoContent_bem" data-settings='{"video":"https://www.youtube.com/embed/1I5I_NoCDd8","heading":"Characters in Teyvat"}'></div>
+            <div data-module="userFeedback"></div>
+            <div data-module="footer_bem"></div>
         <section>
     </body>
     

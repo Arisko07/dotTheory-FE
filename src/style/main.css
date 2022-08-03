@@ -1,3 +1,9 @@
+/* Font */
+/* Font */
+/* Color */
+/* Color */
+/* Images */
+/* Images */
 html {
   font-family: "Nunito";
   color: white;
@@ -125,6 +131,10 @@ a {
 }
 
 .mainContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

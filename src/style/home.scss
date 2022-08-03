@@ -1,8 +1,4 @@
-$primary-font: 'Nunito';
-$primary-color: white;
-$secondary-color:black;
-$background-image: url(../../img/shooting.jpg);
-$header-image: url(../../img/yellowBanner.jpg);
+@import "config";
 
 /*home page style*/
 
@@ -26,7 +22,7 @@ $header-image: url(../../img/yellowBanner.jpg);
         */
         padding-bottom: 10px;
         border-radius: 10px;   
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba($secondary-color,0.3);
         p,h3{margin: 10px 20px;}
     }        
     .art-footer{
@@ -34,13 +30,13 @@ $header-image: url(../../img/yellowBanner.jpg);
         margin: 10px 20px;
         justify-content: space-between;
         margin-top: auto;
-        strong{color: orange;}
+        strong{color: $color-orange;}
     }    
     .art-wrapper{
         position: relative;
         overflow: hidden;
         width: 380px;
-        width: 90.47619047619048%;
+        width: 90%;
         height: 0;
         padding-bottom: 50%;
         background-size: cover;
@@ -86,7 +82,7 @@ $header-image: url(../../img/yellowBanner.jpg);
         width: 100%;
         height: 0;
         padding-bottom: 13.515625%;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: rgba($secondary-color,0);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -127,7 +123,7 @@ $header-image: url(../../img/yellowBanner.jpg);
 /*home page style*/
 
 .article-list{
-    background-image: linear-gradient(0deg, antiquewhite, transparent);
+    background-image: linear-gradient(0deg, $color-antique-white, transparent);
     color: black;
     display: grid;
     row-gap: 10px;
@@ -144,16 +140,16 @@ $header-image: url(../../img/yellowBanner.jpg);
         transition: background-color 0.5s, box-shadow 0.5s;
         &.active,
         &:hover{
-            color: whitesmoke;
-            background-color: black;
-            box-shadow: 0 0 0 2px whitesmoke;
+            color: $color-white-smoke;
+            background-color: $secondary-color;
+            box-shadow: 0 0 0 2px $color-white-smoke;
         }
     }
     a{display: none;}
     .section-item{
         position: relative;
         display: grid;
-        background-color: whitesmoke;
+        background-color: $color-white-smoke;
         grid-template-columns: 2fr 6fr;
         border-radius: 5px;
         img{

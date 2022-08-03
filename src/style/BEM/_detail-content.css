@@ -1,0 +1,26 @@
+.detail-content{        
+    display: grid;    
+    grid-template-columns: 1fr 1fr;    
+    flex: 1;
+    margin: 1% 0 0;
+    border: 2px solid;
+    padding: 1%;
+}
+.detail-content__description{
+    margin-right: 5%;
+}
+.detail-content__image{
+    max-width: 100%;
+}
+.detail-content__image img{
+    width: 100%;
+}
+@media screen and (max-width: 320px) {
+    .detail-content{ 
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+    .detail-content__description {
+        margin-right: 0;
+    }
+}

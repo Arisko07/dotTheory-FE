@@ -1,0 +1,68 @@
+@import "config_bem.css";
+@import "_header.css";
+@import "_footer.css";
+@import "_search_bar.css";
+@import "_link.css";
+@import "_hot-news.css";
+@import "_nation-list.css";
+
+@import "_detail-content.css";
+@import "_side-content.css";
+@import "_character-table.css";
+@import "_detail-video.css";
+@import "_user-feedback.css";
+
+html {
+    font-family: "Nunito";
+    color: white;
+  }
+
+body {
+margin: 0;
+}
+
+a {
+text-decoration: unset;
+color: unset;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.float-left{
+    position: absolute;
+    left: 0;
+}
+.float-right{
+    position: absolute;
+    right: 0;
+}
+.bg-black{
+    background-color: var(--secondary-color);
+}
+.text-bold{
+    font-weight: bold;
+}
+.full-height{
+    height: 100%;
+}
+.full-width{
+    height: 100%;
+}
+.content{
+    display: flex;
+    font-family: var(--primary-font);
+    width: 70%;
+    color: var(--primary-color);
+    margin: 5% auto 40px;
+}
+.content.table{flex-direction: column;}
+@media screen and (max-width: 750px) {
+    .content{
+        width: 100%;
+    }
+}
